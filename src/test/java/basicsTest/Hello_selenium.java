@@ -7,10 +7,13 @@ import org.testng.annotations.Test;
 
 public class Hello_selenium {
     @Test
-    public void openBrowser(){
+    public void openBrowser() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         WebDriver driver =new ChromeDriver();
         driver.get("https://www.amazon.in/");
+        driver.manage().window().maximize();
+        Thread.sleep(3000);
+        driver.close();
     }
 
 
