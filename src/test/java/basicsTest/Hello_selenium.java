@@ -14,6 +14,8 @@ public class Hello_selenium {
         driver.manage().window().maximize();
         Thread.sleep(3000);
         driver.close();
+        System.out.println("welcome");
+        System.out.println("Rp");
     }
 
 
